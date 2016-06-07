@@ -3,19 +3,19 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: [
-    './source/app.js'
+    './source/client.js'
   ],
 
   output: {
     path: './output/static/',
     publicPath: '/',
-    filename: 'app-bundle.js'
+    filename: 'client-bundle.js'
   },
 
   plugins: [
     new CopyWebpackPlugin(
-        [ { from: 'source', to: 'static' } ],
-        { ignore: [ '*.js', '*.jsx'] }
+        [ { from: 'source', to: '' } ],
+        { ignore: [ '*.js', '*.jsx', '.gitignore'] }
     )
   ],
 
