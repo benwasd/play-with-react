@@ -4,7 +4,7 @@ const App = React.createClass({
   render() {
     return (
       <div>
-        <h1>My Amazing React App!</h1>
+        <h1>App!</h1>
       </div>
     );
   }

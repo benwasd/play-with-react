@@ -3,7 +3,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: [
-    './source/client.js'
+    './source/client.jsx'
   ],
 
   output: {
