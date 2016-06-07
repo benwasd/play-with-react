@@ -7,14 +7,14 @@ module.exports = {
   ],
 
   output: {
-    path: './output/',
+    path: './output/static/',
     publicPath: '/',
     filename: 'app-bundle.js'
   },
 
   plugins: [
     new CopyWebpackPlugin(
-        [ { from: 'source', to: '' } ],
+        [ { from: 'source', to: 'static' } ],
         { ignore: [ '*.js', '*.jsx'] }
     )
   ],
